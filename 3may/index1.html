@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .box{
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;position: relative;
+    }
+    .light{
+        height: 400px;
+        width: 400px;
+        background-color: rgb(255, 94, 0);
+        position: absolute;
+        bottom: -100px;
+        right: 300px;
+        border-radius: 50%;
+    }
+    .setting{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .boxdiv{
+        height: 75vh;
+        width: 25vw;
+        border-radius: 15px;
+        overflow: hidden;   
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+    .first{
+        height: 30%;
+        background: url('https://img.freepik.com/free-vector/bokeh-lights-effect-with-dark-background_23-2148426672.jpg?ga=GA1.1.452156382.1737796064&semt=ais_hybrid&w=740') center/cover no-repeat;
+    }
+    .sec{
+        height: 70%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+    }
+    .photo{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: none;
+        background: url('https://img.freepik.com/free-photo/brunette-girl-posing-with-flowers_23-2148135920.jpg?ga=GA1.1.452156382.1737796064&semt=ais_hybrid&w=740') center/cover no-repeat;
+        position: absolute;
+        top:-60px;
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    .name{
+        text-align: center;
+        color: white;
+    }
+    .footer{
+        width: 100%;
+        line-height: 25px;
+        padding-left: 35px;
+        color: white;
+    }
+    .button{
+        text-align: center;
+    }
+    .button button{
+        background-color: black;
+        color: white;
+        padding: 10px 35px;
+        border: none;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="setting"><i style="font-size: 25px;" class="fa-solid fa-gear"></i></div>
+        <div class="light"></div>
+        <div class="boxdiv">
+            <div class="first"></div>
+            <div class="sec">
+                <div class="photo">
+
+                </div>
+                <div class="content">
+                    <div class="name">
+                        <h1>Alison Doe</h1>
+                        <h4>Web Designer</h4>
+                    </div>
+                    <div class="footer">
+                        <p><i style="padding-right: 5px;" class="fa-solid fa-location-dot"></i> Paris, France</p>
+                        <p><i style="padding-right: 5px;" class="fa-solid fa-building"></i> Fantasy Company inc..</p>
+                        <p><i style="padding-right: 5px;" class="fa-regular fa-envelope"></i> alison@fantasy.com</p>
+                    </div>
+                    <div class="button">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
